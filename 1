@@ -1,0 +1,12 @@
+a = 1
+zen,fu,summ= 0,0,0
+while a != 0:
+    a = eval(input())
+    summ += a
+    if a > 0:
+        zen += 1
+    elif a < 0:
+        fu += 1
+print("{:.1f}".format(summ/(fu+zen)))
+print(zen)
+print(fu)
